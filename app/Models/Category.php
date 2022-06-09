@@ -10,3 +10,4 @@ class Category extends Model
         return $this->hasMany('App\Models\Post');
     }
 }
+// a categoria appartengono piu posts
