@@ -9,6 +9,14 @@
                 <label for="title">titolo</label>
                 <input type="text" class="form-control" id="title" placeholder="titolo" name="title">
 
+                <label for="category">category</label>
+                <select name="category_id" id="category">
+                    <option value="">nessuna</option>
+                    @foreach ($categories as $category)
+                        <option value="{{$category->id}}">{{$category->label}}</option>
+                    @endforeach
+                </select>
+
                 <label for="content">content</label>
                 <textarea id="content" name="content" cols="30" rows="10"></textarea>
 
